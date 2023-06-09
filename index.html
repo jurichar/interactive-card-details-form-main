@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="sr-only">Bank card form</h1>
+    <div class="Content">
+      <img
+        class="Background-mobile"
+        src="./images/bg-main-mobile.png"
+        alt="bg-mobile"
+      />
+      <img
+        class="Background-desktop"
+        src="./images/bg-main-desktop.png"
+        alt="bg-desktop"
+      />
+      <div class="Cards">
+        <div class="Card_front">
+          <div class="Card_logo">
+            <img class="Card_logo_svg" src="./images/card-logo.svg" alt="Card logo front" />
+          </div>
+          <div class="Card_number">
+            <h2 id="number_on_card">0000 0000 0000 0000</h2>
+          </div>
+          <div class="Line">
+            <div class="Card_holder">
+              <p id="holder_on_card">Card Holder</p>
+            </div>
+
+            <div class="Card_expiration">
+              <p id="exp_on_card">00/00</p>
+            </div>
+          </div>
+        </div>
+        <div class="Card_back">
+          <div class="Card_cvc">
+            <p id="cvc_on_card">CVC</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="Form">
+        <div class="Inputs_informations">
+          <div class="Input_name">
+            <p>Cardholder Name</p>
+            <input
+              id="name_on_form"
+              type="text"
+              placeholder="e.g. Jane Appleseed"
+            />
+          </div>
+
+          <div class="Input_number">
+            <p>Card Number</p>
+            <input
+              id="number_on_form"
+              type="text"
+              placeholder="e.g. 1234 5678 9123 0000"
+            />
+          </div>
+
+          <div class="Input_line_group">
+            <div class="Input_expiration_date">
+              <p>Exp. Date (MM/YY)</p>
+              <input id="MM_on_form" type="text" placeholder="MM" />
+              <input id="YY_on_form" type="text" placeholder="YY" />
+            </div>
+
+            <div class="Input_cvc">
+              <p>CVC</p>
+              <input id="cvc_on_form" type="text" placeholder="e.g. 123" />
+            </div>
+          </div>
+        </div>
+        <button id="button_on_form">Confirm</button>
+      </div>
+
+      <div class="Success">
+        <img class="Success_icon" src="./images/icon-complete.svg" alt="" />
+        <h2 class="Success_title">Thank you!</h2>
+        <p class="Success_text">We've added your card details</p>
+        <button id="button_on_success">Continue</button>
+      </div>
+    </div>
+  </body>
+</html>
