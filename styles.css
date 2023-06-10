@@ -78,6 +78,16 @@ body .Content .Cards .Card_front .Line {
   flex-direction: row;
   justify-content: space-between;
 }
+body .Content .Cards .Card_front .Line .Card_expiration {
+  display: flex;
+  flex-direction: row;
+}
+@media (min-width: 768px) {
+  body .Content .Cards .Card_front {
+    top: 13rem;
+    left: 17rem;
+  }
+}
 body .Content .Cards .Card_back {
   display: flex;
   justify-content: flex-end;
@@ -88,7 +98,7 @@ body .Content .Cards .Card_back {
   width: 280px;
   height: 154px;
   top: 2rem;
-  right: 1rem;
+  left: 4.5rem;
   background-image: url("./images/bg-card-back.png");
   background-size: cover;
 }
@@ -97,8 +107,128 @@ body .Content .Cards .Card_back .Card_cvc #cvc_on_card {
   font-weight: 500;
   font-size: 13px;
 }
-body .Content .Success {
+@media (min-width: 768px) {
+  body .Content .Cards .Card_back {
+    top: 24rem;
+    left: 21rem;
+  }
+}
+body .Content .Form {
   display: none;
+  flex-direction: column;
+  padding: 4rem 1rem 2rem 1rem;
+  font-size: 15px;
+  width: 100%;
+  gap: 1rem;
+}
+body .Content .Form .Inputs_informations {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body .Content .Form .Inputs_informations .Input_name #name_on_form {
+  border-radius: 10px;
+  border: 1px solid rgb(200, 200, 200);
+}
+body .Content .Form .Inputs_informations .Input_number #number_on_form {
+  border-radius: 10px;
+  border: 1px solid rgb(200, 200, 200);
+}
+body .Content .Form .Inputs_informations .Input_line_group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+body .Content .Form .Inputs_informations .Input_line_group .Input_expiration {
+  min-width: 140px;
+  width: 50%;
+}
+body .Content .Form .Inputs_informations .Input_line_group .Input_expiration .Inputs_expiration {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+body .Content .Form .Inputs_informations .Input_line_group .Input_expiration .Inputs_expiration #MM_on_form {
+  border-radius: 10px;
+  border: 1px solid rgb(200, 200, 200);
+}
+body .Content .Form .Inputs_informations .Input_line_group .Input_expiration .Inputs_expiration #YY_on_form {
+  border-radius: 10px;
+  border: 1px solid rgb(200, 200, 200);
+}
+body .Content .Form .Inputs_informations .Input_line_group .Input_cvc {
+  width: 50%;
+}
+body .Content .Form .Inputs_informations .Input_line_group .Input_cvc #cvc_on_form {
+  border-radius: 10px;
+  border: 1px solid rgb(200, 200, 200);
+}
+body .Content .Form #button_on_form {
+  height: 60px;
+  min-height: 60px;
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+  color: rgb(255, 244, 254);
+  background-color: rgb(34, 14, 48);
+  border: none;
+  cursor: pointer;
+}
+body .Content .Form input, body .Content .Form #cvc_on_form, body .Content .Form #number_on_form, body .Content .Form #name_on_form, body .Content .Form #MM_on_form, body .Content .Form #YY_on_form {
+  margin-top: 0.5rem;
+  height: 40px;
+  width: 100%;
+  outline: none;
+  border: 1px solid grey;
+  padding: 1rem;
+}
+body .Content .Form #name_error, body .Content .Form #number_error, body .Content .Form #MM_error, body .Content .Form #YY_error, body .Content .Form #cvc_error {
+  color: red;
+  font-size: 13px;
+  margin-top: 0.5rem;
+}
+@media (min-width: 768px) {
+  body .Content .Form {
+    padding: 4rem 10rem 10rem 10rem;
+  }
+}
+body .Content .Success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 4rem 1rem 2rem 1rem;
+  gap: 1rem;
+  height: 70vh;
+}
+body .Content .Success .Success_icon {
+  margin-bottom: 2rem;
+}
+body .Content .Success .Success_title {
+  font-size: 2rem;
+}
+body .Content .Success .Success_text {
+  margin-bottom: 2rem;
+  color: gray;
+}
+body .Content .Success #button_on_success {
+  height: 60px;
+  width: 100%;
+  min-height: 60px;
+  outline: none;
+  border-radius: 10px;
+  color: rgb(255, 244, 254);
+  background-color: rgb(34, 14, 48);
+  border: none;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  body .Content .Success {
+    padding: 4rem 10rem 10rem 10rem;
+  }
 }
 @media (min-width: 768px) {
   body .Content {

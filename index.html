@@ -61,7 +61,9 @@
             </div>
 
             <div class="Card_expiration">
-              <p id="exp_on_card">00/00</p>
+              <p id="MM_on_card">MM</p>
+              <p>/</p>
+              <p id="YY_on_card">YY</p>
             </div>
           </div>
         </div>
@@ -75,45 +77,59 @@
       <div class="Form">
         <div class="Inputs_informations">
           <div class="Input_name">
-            <p>Cardholder Name</p>
+            <p>CARDHOLDER NAME</p>
             <input
               id="name_on_form"
               type="text"
               placeholder="e.g. Jane Appleseed"
             />
+            <p id="name_error"></p>
           </div>
 
           <div class="Input_number">
-            <p>Card Number</p>
+            <p>CARD NUMBER</p>
             <input
               id="number_on_form"
               type="text"
               placeholder="e.g. 1234 5678 9123 0000"
+              maxlength="16"
             />
+            <p id="number_error"></p>
           </div>
 
           <div class="Input_line_group">
-            <div class="Input_expiration_date">
-              <p>Exp. Date (MM/YY)</p>
-              <input id="MM_on_form" type="text" placeholder="MM" />
-              <input id="YY_on_form" type="text" placeholder="YY" />
+            <div class="Input_expiration">
+              <p>EXP. DATE (MM/YY)</p>
+              <div class="Inputs_expiration">
+                <div>
+                  <input id="MM_on_form" type="text" placeholder="MM" maxlength="2" />
+                  <p id="MM_error"></p>
+                </div>
+                <div>
+                  <input id="YY_on_form" type="text" placeholder="YY" maxlength="2" />
+                  <p id="YY_error"></p>
+                </div>
+              </div>
             </div>
 
             <div class="Input_cvc">
               <p>CVC</p>
-              <input id="cvc_on_form" type="text" placeholder="e.g. 123" />
+              <input id="cvc_on_form" type="text" placeholder="e.g. 123" maxlength="3" />
+              <p id="cvc_error"></p>
             </div>
           </div>
         </div>
         <button id="button_on_form">Confirm</button>
+        <p id="button_error"></p>
       </div>
 
       <div class="Success">
         <img class="Success_icon" src="./images/icon-complete.svg" alt="" />
-        <h2 class="Success_title">Thank you!</h2>
+        <h2 class="Success_title">THANK YOU!</h2>
         <p class="Success_text">We've added your card details</p>
         <button id="button_on_success">Continue</button>
       </div>
     </div>
+    <script src="./main.js"></script>
   </body>
 </html>
