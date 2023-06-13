@@ -114,7 +114,7 @@ body .Content .Cards .Card_back .Card_cvc #cvc_on_card {
   }
 }
 body .Content .Form {
-  display: none;
+  display: flex;
   flex-direction: column;
   padding: 4rem 1rem 2rem 1rem;
   font-size: 15px;
@@ -195,7 +195,7 @@ body .Content .Form #name_error, body .Content .Form #number_error, body .Conten
   }
 }
 body .Content .Success {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
