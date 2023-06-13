@@ -124,7 +124,7 @@ body {
             }
         }
         .Form {
-            display: none;
+            display: flex;
             flex-direction: column;
             padding: 4rem 1rem 2rem 1rem;
             font-size: 15px;
@@ -207,7 +207,7 @@ body {
             }
         }
         .Success {
-            display: flex;
+            display: none;
             flex-direction: column;
             justify-content: center;
             align-items: center;
