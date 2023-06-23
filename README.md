@@ -4,7 +4,7 @@
 
 Welcome to the Credit Card Form Component project. This is a custom implementation, developed as part of the [Frontend Mentor](https://www.frontendmentor.io) challenges. It allows users to input their credit card information in a form and see a visual representation of a credit card being filled in real-time.
 
-You can check out the live project [here]([https://your-vercel-app-url/](https://interactive-card-details-form-main-lovat.vercel.app/).
+You can check out the live project [here](https://interactive-card-details-form-main-lovat.vercel.app/).
 
 ## Project Features
 
